@@ -7,10 +7,11 @@
             "command": "g++",
             "args": [
                 "-g",
-                "${file}",
+                "${fileDirname}\\*.cpp",
                 "-o",
                 "${workspaceFolder}\\${fileBasenameNoExtension}.exe",
                 "-I", "C:\\opencv\\mingw\\include",
+                "-I", "${workspaceFolder}",
                 "-L", "C:\\opencv\\mingw\\x64\\mingw\\bin",                
                 "-llibopencv_calib3d411",
                 "-llibopencv_core411",
